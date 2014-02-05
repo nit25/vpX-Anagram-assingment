@@ -13,6 +13,8 @@
  */
  body{
  	background-image:url('/assets/backfinal.jpg');
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
  }
  .ac_title
  {
