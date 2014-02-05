@@ -10,6 +10,7 @@
 	<div class="ac_content" >
 			<%= yield %>		
 	</div>
+	<%= javascript_include_tag "prototype"%>
 
 <%= javascript_tag do %>
 	  	result1 = '<%=@result.to_s %>';
@@ -28,6 +29,7 @@
 			myElement.style.display = "inline";
 			var myElement1 = document.querySelector("#ac_image_on_success");
 			myElement1.style.display = "block";
+			
 		}	  
 		else
 		{

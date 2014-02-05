@@ -6,7 +6,7 @@
 	 			<div style="height:140px; width:100%;padding-top:1%;">
 					<%= text_field :first, '', :class =>'ac_textfield1', :value => @first_word %>
 					<%= text_field :second, '', :id =>'ac_textfield2', :value => @second_word %>
-	  				<% if (@first_word!= nil) %> 
+	  				<% if (@result=="Anagram") %> 
 			  			<div class="ac_message">
 			  			<%= @result.to_s %>
 			  			</div>	
