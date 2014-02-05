@@ -4,8 +4,14 @@
  		<div class="ac_content_form_inside">
 	 		<%= form_tag anagram_check_path do %>
 	 			<div class="ac_content_form_left">
-					<%= text_field :first, '', :class =>'ac_textfield1', :value => @first_word %>
-					<%= text_field :second, '', :id =>'ac_textfield2', :value => @second_word %>
+					<% if (@result=="Not Anagram") %> 
+			  			<%= text_field :first, '', :class =>'ac_textfield1' %>
+						<%= text_field :second, '', :id =>'ac_textfield2' %>
+					<% end %> 
+					<% if (@result!="Not Anagram") %> 
+			  			<%= text_field :first, '', :class =>'ac_textfield1', :placeholder => @first_word %>
+						<%= text_field :second, '', :id =>'ac_textfield2', :placeholder => @second_word %>
+					<% end %> 
 	  				<% if (@result=="Anagram") %> 
 			  			<div class="ac_message">
 			  			<%= @result.to_s %>
@@ -14,6 +20,9 @@
 	  			</div>
 	  		<%= submit_tag "Check", :class => 'ac_button', :id => 'ac_button_normal'%> 
   			<% end %>
+  			<a href="/anagram/check">
+  			<input type="button" value="Try Again" class = 'ac_button' id='ac_button_success'%> 
+  			</a>
   		</div>
  		<div class="ac_content_form_right">
  		<div id="ac_image_on_success" >

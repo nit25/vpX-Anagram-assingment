@@ -9,7 +9,7 @@ class AnagramController < ApplicationController
           @result= "Not Anagram";
       end
       if @first_word.nil?
-        @result="No Entry";
+          @result="No Entry";
       end
   end
 end

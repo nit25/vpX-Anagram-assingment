@@ -19,7 +19,6 @@
  .ac_title
  {
 
- 	
  	color: #202098;
  	text-align: center;
  	background-color:rgba(255,255,255,0.9);
@@ -71,9 +70,21 @@
 	margin-top:5%;
 	color:white;
 	font-size:18px;
+	display:inline;
 	
 }
 
+a{
+	text-decoration:none;
+}
+#ac_button_normal{
+	display:block;
+}
+#ac_button_success{
+	display:none;
+
+
+}
 
 
 

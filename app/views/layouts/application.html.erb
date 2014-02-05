@@ -10,14 +10,10 @@
 	<div class="ac_content" >
 			<%= yield %>		
 	</div>
-	<%= javascript_include_tag "prototype"%>
-
+	
 <%= javascript_tag do %>
 	  	result1 = '<%=@result.to_s %>';
-	   	if(result1=="No Entry")
-	  	{
-	  	}
-	  	else if(result1 == "Anagram")
+	   	if(result1 == "Anagram")
 		{
 			var myElement = document.querySelector(".ac_textfield1");
 			myElement.style.backgroundColor = "green";
@@ -28,8 +24,14 @@
 			var myElement1 = document.querySelector("#ac_image_on_success");
 			myElement1.style.display = "block";
 
+			var myElement1 = document.querySelector("#ac_button_normal");
+			myElement1.style.display = "none";
+
+			var myElement1 = document.querySelector("#ac_button_success");
+			myElement1.style.display = "block";
+
 		}	  
-		else
+		else if(result1=="Not Anagram")
 		{
 		 	alert("Not Anagrams! Please Try Again");
 		 	var myElement = document.querySelector(".ac_textfield1");
@@ -43,9 +45,8 @@
 		
 			
 		}
-  		
-					
-  <% end %>
+ <% end %>
+
 
 </body>
 </html>
