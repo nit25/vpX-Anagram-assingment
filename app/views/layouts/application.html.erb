@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="">
+<head>
+  <title>Task</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+
+  </head>
+<body style="background-image:url('/assets/backfinal.jpg');">
+	<div class="ac_content" >
+			<%= yield %>		
+	</div>
+
+<%= javascript_tag do %>
+	  	result1 = '<%=@result.to_s %>';
+	   	if(result1=="No Entry")
+	  	{
+	  		alert("Welcome");
+	  	}
+
+	  	else if(result1 == "Anagram")
+		{
+			var myElement = document.querySelector(".ac_textfield1");
+			myElement.style.backgroundColor = "green";
+			myElement.style.display = "inline";
+			var myElement = document.querySelector("#ac_textfield2");
+			myElement.style.backgroundColor = "green";
+			myElement.style.display = "inline";
+			var myElement1 = document.querySelector("#ac_image_on_success");
+			myElement1.style.display = "block";
+		}	  
+		else
+		{
+		 	alert("Not Anagrams! Please Try Again");
+		 	var myElement = document.querySelector(".ac_textfield1");
+			myElement.style.backgroundColor = "#D93600";
+			myElement.value="";
+			var myElement = document.querySelector("#ac_textfield2");
+			myElement.style.backgroundColor = "#D93600";
+			myElement.value="";
+			var myElement = document.querySelector("ac_image_on_success");
+			myElement.style.display = "none";
+		
+			
+		}
+  		
+					
+  <% end %>
+
+</body>
+</html>

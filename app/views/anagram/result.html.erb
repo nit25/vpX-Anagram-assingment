@@ -1,0 +1,10 @@
+<h1>Anagram#result</h1>
+<p>Find me in app/views/anagram/result.html.erb</p>
+<%= form_tag anagram_result_path do %>
+  <%= text_field :first, 'First Word' %>
+
+  <%= text_field :second, 'Second Word' %>
+  <!--<%= submit_tag "Check Angram" %>-->
+
+ 	<h1><%= @first_word %></h1>
+<% end %>

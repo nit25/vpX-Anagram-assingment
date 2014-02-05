@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ .ac_title
+ {
+
+ 	
+ 	color: #202098;
+ 	text-align: center;
+ 	background-color:rgba(255,255,255,0.9);
+ 	height:18%;
+ 	padding-top:3%;
+ 	font-size:3em;
+ }
+ .ac_textfield1{
+ 	border-radius:5%;
+ 	height:15%;
+ 	width:35%;
+ 	font-size:18px;
+ 	margin-left:6%;
+ 	margin-top:4%;
+ 	border:none;
+ 	border-radius: 5%;
+ 	padding:3%;
+ 	display:block;
+ 	color:white;
+ 	background-color:#D93600;
+
+ }
+ #ac_textfield2{
+ 	border-radius:5%;
+ 	height:15%;
+ 	width:35%;
+ 	font-size:18px;
+ 	margin-left:6%;
+ 	margin-top:4%;
+ 	border:none;
+ 	border-radius: 5%;
+ 	padding:3%;
+ 	display:block;
+ 	color:white;
+ 	background-color:#D93600;
+}
+
+.ac_button{
+	
+	
+	background-color: #202078;
+	border:none;
+	height:40px;
+	width:20%;
+	text-align: center;
+	margin:auto;
+	border-radius:10%;
+	margin-left:15%;
+	margin-top:5%;
+	color:white;
+	font-size:18px;
+	
+}
+
+
+
+
+.ac_content{
+	height:550px; 
+	width:900px; 
+	/*background-image:url(/assets/back6.jpg);*/
+	background-color:rgba(255,255,255,0.1);
+	margin:auto; 
+	margin-top:2%; 
+	 
+	box-shadow: 20px 20px 10px #505090;
+}
+
+.ac_congrats{
+	float:right;
+	margin-top:-3%;
+	margin-left:-2%;
+	width:40%;
+	height:40%;
+}
+#ac_image_on_success{
+	margin:0% 3% 0 0%; 
+	height:80%; 
+	width:35%; 
+	float:right;
+	display:none;
+	position:absolute;
+
+}
+.ac_message{
+	height:35px; 
+	width:50%; 
+	margin:auto;
+	margin-top:5%;
+	background-color:rgba(255,255,255,0.3);
+	border-radius:3%; 
+	color:white; 
+	font-size:26px;
+	text-align:center; 
+	padding-top:1%;
+}	
+
