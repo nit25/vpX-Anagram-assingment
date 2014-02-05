@@ -6,7 +6,7 @@
   <%= csrf_meta_tags %>
 
   </head>
-<body style="background-image:url('/assets/backfinal.jpg');">
+<body >
 	<div class="ac_content" >
 			<%= yield %>		
 	</div>
@@ -16,9 +16,7 @@
 	  	result1 = '<%=@result.to_s %>';
 	   	if(result1=="No Entry")
 	  	{
-	  		alert("Welcome");
 	  	}
-
 	  	else if(result1 == "Anagram")
 		{
 			var myElement = document.querySelector(".ac_textfield1");
@@ -29,7 +27,7 @@
 			myElement.style.display = "inline";
 			var myElement1 = document.querySelector("#ac_image_on_success");
 			myElement1.style.display = "block";
-			
+
 		}	  
 		else
 		{

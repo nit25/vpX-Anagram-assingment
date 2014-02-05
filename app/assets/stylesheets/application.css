@@ -11,6 +11,9 @@
  *= require_self
  *= require_tree .
  */
+ body{
+ 	background-image:url('/assets/backfinal.jpg');
+ }
  .ac_title
  {
 
@@ -76,11 +79,35 @@
 	height:550px; 
 	width:900px; 
 	/*background-image:url(/assets/back6.jpg);*/
-	background-color:rgba(255,255,255,0.1);
+	background-color:rgba(0,0,0,0.4);
 	margin:auto; 
 	margin-top:2%; 
-	 
 	box-shadow: 20px 20px 10px #505090;
+}
+.ac_content_form{
+	margin:5%;
+	height:60%; 
+	width:90%; 
+	border-radius:1%;
+}
+.ac_content_form_inside{
+	margin:4% 0 0 3%;
+	height:80%; 
+	width:55%; 
+	float:left; 
+	background-color:rgba(0,0,0,0.9);
+}
+.ac_content_form_left{
+	height:140px; 
+	width:100%;
+	padding-top:1%;
+}
+.ac_content_form_right{
+	background-image:url(/assets/back_content.jpg); 
+	margin:2% 1% 0 4%; 
+	height:90%; 
+	width:37%; 
+	float:right;
 }
 
 .ac_congrats{

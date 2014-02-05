@@ -1,9 +1,9 @@
 <h1 class="ac_title">Anagram Check</h1>
 
-	<div style="margin:5%;height:60%; width:90%; border-radius:1%;">
- 		<div style="margin:4% 0 0 3%;height:80%; width:55%; float:left; background-color:rgba(0,0,0,0.9);">
+	<div class="ac_content_form">
+ 		<div class="ac_content_form_inside">
 	 		<%= form_tag anagram_check_path do %>
-	 			<div style="height:140px; width:100%;padding-top:1%;">
+	 			<div class="ac_content_form_left">
 					<%= text_field :first, '', :class =>'ac_textfield1', :value => @first_word %>
 					<%= text_field :second, '', :id =>'ac_textfield2', :value => @second_word %>
 	  				<% if (@result=="Anagram") %> 
@@ -11,24 +11,15 @@
 			  			<%= @result.to_s %>
 			  			</div>	
 	  				<% end %> 
-
 	  			</div>
-	  			
-
-	  			<%= submit_tag "Check", :class => 'ac_button', :id => 'ac_button_normal'%> 
-  				
-	  		<% end %>
-			
+	  		<%= submit_tag "Check", :class => 'ac_button', :id => 'ac_button_normal'%> 
+  			<% end %>
   		</div>
- 	
- 		<div style="background-image:url(/assets/back_content.jpg); margin:2% 1% 0 4%; height:90%; width:37%; float:right;">
+ 		<div class="ac_content_form_right">
  		<div id="ac_image_on_success" >
  				<%= image_tag("bob.png", :alt => "Success") %>
 		</div>
 		<div>
-
-		
-		
  	</div>
  
 
