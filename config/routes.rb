@@ -1,4 +1,6 @@
 Task::Application.routes.draw do
+
+  root :to => "Anagram#check", as: "Check"
   get "anagram/check"
 
   post "anagram/check"
