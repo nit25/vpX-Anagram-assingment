@@ -2,9 +2,9 @@ class AnagramController < ApplicationController
   def check
   	@first_word = params[:first]
     @second_word = params[:second]
-        
-      if @first_word.to_s.length.eql? @second_word.to_s.length
-            if @first_word.to_s.downcase.chars.sort.join.eql? @second_word.to_s.downcase.chars.sort.join
+    
+      if @first_word.to_s.delete('^A-Za-z').length.eql? @second_word.to_s.delete('^A-Za-z').length
+            if @first_word.to_s.delete('^A-Za-z').downcase.chars.sort.join.eql? @second_word.to_s.delete('^A-Za-z').downcase.chars.sort.join
           	 @result= "Anagram";
             else
               @result= "Not Anagram";
